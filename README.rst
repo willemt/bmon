@@ -2,9 +2,9 @@ Most of the time it's most efficient to batch work.
 
 But.. if you have multiple threads this can be difficult to coordinate, especially if the threads need to respond to clients quickly.
 
-bmon (aka batching monitor) makes it easy to batch work from multiple threads
+bmon (aka batching `monitor <http://en.wikipedia.org/wiki/Monitor_(synchronization)>`_) makes it easy to batch work from multiple threads.
 
-Case study: Batching PearDB's LMBD writes
+Case study: Batching PearDB's LMDB writes
 -----------------------------------------
 LMDB only allows a single writer. To get around this it's best to batch your writes into a single transactionn.
 
